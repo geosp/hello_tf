@@ -1,3 +1,3 @@
 # Understanding TensorFlow By Examples
 
-$ \sum_{\forall i}{x_i^{2}} $
+$$e^{i\pi}+1=0$$
