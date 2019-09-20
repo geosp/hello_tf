@@ -15,5 +15,5 @@ The basic unit of work in a neural network is the perceptron. A perceptron has a
 * $S_{w}$ determines the strength of the signal emitted by the perceptron.
 * Capping $S_{w}$ adds additional control over signal emission and is done by subtracting a bias $b$ from the sum.
 * It is possible for $S_{w} - b$ to have a value outside the desire signal strength $0 \geq p \leq 1$. For this reason an `activation function` is used to bring this value into the desired range.
-* One of the  commonly used `activation functions` is the `sigmoid` $\sigma (x) =  \frac {\mathrm{1} }{\mathrm{1} + e^{-r} }$.
+* One of the  commonly used `activation functions` is the `sigmoid` $\sigma (x) =  \frac {\mathrm{1} }{\mathrm{1} + e^{-x} }$.
 * In conclusion $P(\hat{W}) = \sigma (S_{w} - b)$.
