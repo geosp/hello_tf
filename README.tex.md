@@ -1,19 +1,31 @@
-# Neural Networks
+# Machine Learning with Neural Networks
 
 ## Introduction
 
 ### Perceptrons
 
-The basic unit of work in a neural network is the perceptron. A perceptron has an associated potential to emit a signal. For convenience the value of the potential is kept between $0$ and $1$. If the potential $p = 1$ the neuron is active, if $p = 0$ the neuron is inactive. We can implement the perceptron as a function $P$ with an array of activation values $[a_{1}, a_{2}, a_{3}, ..., a_{n}]$ i.e. $a_{1...n}$  in it's internal scope. The function parameters are an array of weight values $[w_{1}, w_{2}, w_{3}, ..., w_{n}]$ or $w_{1...n}$. The output then is the signal $p$. The values $a_{1...n}$ and $w_{1...n}$ are defined as tensors because the types of operations or functions that will be used to manipulate the perceptrons come from a branch of mathematics called [Tensor Analysis](https://en.wikipedia.org/wiki/Tensor_calculus). Consider the implementation of $P$ based on the following:
+The basic unit of work in a neural network is the `perceptron`. A `perceptron` has an associated potential to emit a signal. For convenience the value of the potential is kept between $0$ and $1$. If the potential $p = 1$ the neuron is active, if $p = 0$ the neuron is inactive. We can implement the `perceptron` as a function $P$ with an array of `activation values` $[a_{1}, a_{2}, a_{3}, ..., a_{n}]$ i.e. $a_{1...n}$  in it's internal scope. The function parameters are an array of `weight values` $[w_{1}, w_{2}, w_{3}, ..., w_{n}]$ or $w_{1...n}$. The output then is the signal $p$. The values $a_{1...n}$ and $w_{1...n}$ are defined as tensors because the types of operations or functions that will be used to manipulate the `perceptrons` come from a branch of mathematics called [Tensor Analysis](https://en.wikipedia.org/wiki/Tensor_calculus). Consider the implementation of $P$ based on the following:
 
 * We define tensors $\hat{A} = a_{1...n}$ and $\hat{W} = w_{1...n}$.
 * Multiply tensors $\hat{A}$ and $\hat{W}$ i.e. $\hat{C} = \hat{A} \cdot \hat{W}$.
 * The tensor product will be $\hat{C} = [a_{1}w_{1}, a_{2}w_{2}, a_{3}w_{3}, ..., a_{n}w_{n}]$.
-* Reduce the resulting tensor $\hat{C}$ to a scalar value by adding it's components.
-* The sum of the tensor $\hat{C}$ components $S_{w} = a_{1}w_{1} + a_{2}w_{2} + a_{3}w_{3}, ..., a_{n-1}w_{n-1} + a_{n}w_{n}$.
+* Reduce $\hat{C}$ to a scalar value by adding it's components.
+* The sum of the $\hat{C}$ components is $S_{w} = a_{1}w_{1} + a_{2}w_{2} + a_{3}w_{3}, ..., a_{n-1}w_{n-1} + a_{n}w_{n}$.
 * ${S_{w}}$ is called a weighted sum  and is represented by $\sum_{n=1}^{k} a_{n}w_{n}$ where $k$ is the number of elements in $\hat{C}$.
-* $S_{w}$ determines the strength of the signal emitted by the perceptron.
+* $S_{w}$ determines the strength of the signal emitted by the `perceptron`.
 * Capping $S_{w}$ adds additional control over signal emission and is done by subtracting a bias $b$ from the sum.
-* It is possible for $S_{w} - b$ to have a value outside the desire signal strength $0 \geq p \leq 1$. For this reason an `activation function` is used to bring this value into the desired range.
+* It is possible for $S_{w} - b$ to have a value outside the desire signal strength $0 \geq p \leq 1$. For this reason an `activation function` is used to bring $p$ into the desired range.
 * One of the  commonly used `activation functions` is the `sigmoid` $\sigma (x) =  \frac {\mathrm{1} }{\mathrm{1} + e^{-x} }$.
 * In conclusion $P(\hat{W}) = \sigma (S_{w} - b)$.
+
+### Neural Network
+
+A `neural network` is a graph of associated `perceptrons`. `Neural networks` are composed of `neural network layers`. A `neural network layer` is a tensor of `perceptrons`. The `perceptrons` in a `neural network layer` are connected to each other because they are components of a tensor. We can define layer n as $\hat{L}_{n} = [P_{1}, P_{2}, P_{3}, ... ,P_{n}]$. Neural networks have three `layer types input, hidden, and output`. A neural network  may have multiple input layers but only one input and output layers. Consider a neural network consisting of the fallowing layers:
+
+1. $\hat{L}_{i} = [P_{1i}]$
+2. $\hat{L}_{1h} = [P_{1h},P_{2h}]$
+2. $\hat{L}_{o} = [P_{1o}]$
+
+Neural network themselves are tensors. In this case neural network $\hat{N} = [\hat{L}_{i}, \hat{L}_{1h}, \hat{L}_{o} ]$. `Perceptrons` in a neural network are associated to each other via `function composition`. Consider $P_{1i}$ it has an internal tensor of `activation values` $\hat{A}_{i1} = [a_{1i}]$. The number of components in $\hat{A}_{i1}$ is one. The output of $P_{1i}$ is a potential $p_{1i}$. The key question one must ask at this point is how are the number of `activation values` in $\hat{L}_{1h}$ associated to the number of `activation values` in $\hat{L}_{i}$? Here is where the magic happens $p_{1i}$ becomes the input weight for $P_{1h}$ and $P_{2h}$. This means that $p_{1i}$ becomes $\hat{W}_{1i} = [p_{1i}]$ a weight value tensor and the input for $P_{1h}$ and $P_{2h}$. This means that the activation values tensor for $P_{1h}$ is $\hat{A}_{h1} = [a_{1h}]$ a tensor with one component because the input layer consist of only one component $P_{1i}$. Is important to notice that `the number of activation values in a layer perceptron is determine by the number of perceptrons in the previous layer`.
+
+
