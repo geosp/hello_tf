@@ -1,0 +1,49 @@
+{
+  "name": "@geof/hello_tf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "watch": "babel --watch src --out-dir lib --extensions '.ts,.tsx' --ignore ./**/node_modules/",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline --ignore ./**/node_modules/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geosp/hello_tf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geosp/hello_tf/issues"
+  },
+  "homepage": "https://github.com/geosp/hello_tf#readme",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^1.2.9",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.6.0",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-typescript": "^7.3.2",
+    "@types/lodash": "^4.14.138",
+    "@types/node": "^12.7.4",
+    "typescript": "^3.6.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}
