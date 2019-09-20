@@ -1,6 +1,3 @@
 # Understanding TensorFlow By Examples
 
-1. This
-2. $e^{i\pi}+1=0$
-3. $a+1 \above 1pt b$
-4. $a\\a+b\\a+b+c$
+1. This $\sigma(a_{1}w_{1} + a_{2}w_{2} + a_{3}w_{3}))$
