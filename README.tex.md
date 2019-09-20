@@ -10,9 +10,10 @@ The basic unit of work in a neural network is the perceptron. A perceptron has a
 * Multiply tensors $\hat{A}$ and $\hat{W}$ i.e. $\hat{C} = \hat{A} \cdot \hat{W}$.
 * The tensor product will be $\hat{C} = [a_{1}w_{1}, a_{2}w_{2}, a_{3}w_{3}, ..., a_{n}w_{n}]$.
 * Reduce the resulting tensor $\hat{C}$ to a scalar value by adding it's components.
-* The sum $S_{w}$ of the tensor $\hat{C}$ components is $a_{1}w_{1} + a_{2}w_{2} + a_{3}w_{3}, ..., a_{n-1}w_{n-1} + a_{n}w_{n}$.
+* The sum of the tensor $\hat{C}$ components is $S_{w} = a_{1}w_{1} + a_{2}w_{2} + a_{3}w_{3}, ..., a_{n-1}w_{n-1} + a_{n}w_{n}$.
 * ${S_{w}}$ is called a weighted sum  and is represented by $\sum_{n=1}^{k} a_{n}w_{n}$ where $k$ is the number of elements in $\hat{C}$.
 * The weighted sum determines the strength of the signal emitted by the perceptron.
-* Capping $S_{w}$ adds additional control over signal emission and this is done by introducing a bias $b$ term to the sum.
+* Capping $S_{w}$ adds additional control over signal emission and is done by substracting a bias $b$ from sum.
 * It is possible for $S_{w} - b$ to have a value outside the desire signal strength $0 \geq p \leq 1$. For this reason an activation function is used to bring this value into the desired range.
 * One of the  commonly used `activation functions` is the `sigmoid` $\sigma (x) =  \frac {\mathrm{1} }{\mathrm{1} + e^-r }$.
+* In conclusion $P(\hat{W}) = \sigma (S_{w} - b)$.
