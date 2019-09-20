@@ -1,3 +1,3 @@
 # Understanding TensorFlow By Examples
 
-$$e^{i\pi}+1=0$$
+1. $$e^{i\pi}+1=0$$
