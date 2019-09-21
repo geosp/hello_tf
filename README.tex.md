@@ -24,14 +24,12 @@ A `neural network` is a graph of associated `perceptrons`. `Neural networks` are
 
 <div style="display: flex; flex-wrap: nowrap;" align="center">
 <div>
-
-1. $\hat{L}_{i} = [P_{1i}]$
-2. $\hat{L}_{1h} = [P_{1h},P_{2h}]$
-3. $\hat{L}_{o} = [P_{1o}]$
-
+<img with=110 height=110 src="img/simple_nn.svg"/>
 </div>
 <div>
-<img with=110 height=110 src="img/simple_nn.svg"/>
+
+$\hat{L}_{i} = [P_{1i}]$  $\hat{L}_{1h} = [P_{1h},P_{2h}]$  $\hat{L}_{o} = [P_{1o}]$
+
 </div>
 </div>
 
