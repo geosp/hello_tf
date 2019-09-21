@@ -28,7 +28,7 @@ A `neural network` is a graph of associated `perceptrons`. `Neural networks` are
 </div>
 <div>
 
-$\hat{L}_{i} = [P_{1i}]$  $\hat{L}_{1h} = [P_{1h},P_{2h}]$  $\hat{L}_{o} = [P_{1o}]$
+$\hat{L}_{i} = [P_{1i}]$ &nbsp;&nbsp; $\hat{L}_{1h} = [P_{1h},P_{2h}]$ &nbsp;&nbsp; $\hat{L}_{o} = [P_{1o}]$
 
 </div>
 </div>
