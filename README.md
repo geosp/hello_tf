@@ -1,8 +1,8 @@
 # Machine Learning with Neural Networks
 
-## Introduction
+## Perceptrons
 
-### Perceptrons
+### Introduction
 
 The basic unit of work in a neural network is the `perceptron`. A `perceptron` has an associated potential to emit a signal. For convenience the value of the potential is kept between <img src="/tex/29632a9bf827ce0200454dd32fc3be82.svg?invert_in_darkmode&sanitize=true" align=middle width=8.219209349999991pt height=21.18721440000001pt/> and <img src="/tex/034d0a6be0424bffe9a6e7ac9236c0f5.svg?invert_in_darkmode&sanitize=true" align=middle width=8.219209349999991pt height=21.18721440000001pt/>. If the potential <img src="/tex/012b36279aac832bdad672ff18d4243a.svg?invert_in_darkmode&sanitize=true" align=middle width=38.40740639999999pt height=21.18721440000001pt/> the neuron is active, if <img src="/tex/c9bb81328f293e18596280dfb95dd631.svg?invert_in_darkmode&sanitize=true" align=middle width=38.40740639999999pt height=21.18721440000001pt/> the neuron is inactive. We can implement the `perceptron` as a function <img src="/tex/df5a289587a2f0247a5b97c1e8ac58ca.svg?invert_in_darkmode&sanitize=true" align=middle width=12.83677559999999pt height=22.465723500000017pt/> with an array of `activation values` <img src="/tex/8a3231c98df6eafb822b8b2c14dc3f97.svg?invert_in_darkmode&sanitize=true" align=middle width=117.88258679999998pt height=24.65753399999998pt/> i.e. <img src="/tex/46ba15cae98b59904b6ca6b625b68e28.svg?invert_in_darkmode&sanitize=true" align=middle width=35.08012364999999pt height=14.15524440000002pt/>  in it's internal scope. The function parameters are an array of `weight values` <img src="/tex/31291bd296fcc0ad119638b272e094e7.svg?invert_in_darkmode&sanitize=true" align=middle width=130.20000345pt height=24.65753399999998pt/> or <img src="/tex/9f0bfc20948e9822b9fad9c7c0101985.svg?invert_in_darkmode&sanitize=true" align=middle width=38.159477399999986pt height=14.15524440000002pt/>. The output then is the signal <img src="/tex/2ec6e630f199f589a2402fdf3e0289d5.svg?invert_in_darkmode&sanitize=true" align=middle width=8.270567249999992pt height=14.15524440000002pt/>. The values <img src="/tex/46ba15cae98b59904b6ca6b625b68e28.svg?invert_in_darkmode&sanitize=true" align=middle width=35.08012364999999pt height=14.15524440000002pt/> and <img src="/tex/9f0bfc20948e9822b9fad9c7c0101985.svg?invert_in_darkmode&sanitize=true" align=middle width=38.159477399999986pt height=14.15524440000002pt/> are defined as tensors because the types of operations or functions that will be used to manipulate the `perceptrons` come from a branch of mathematics called [Tensor Analysis](https://en.wikipedia.org/wiki/Tensor_calculus). Consider the implementation of <img src="/tex/df5a289587a2f0247a5b97c1e8ac58ca.svg?invert_in_darkmode&sanitize=true" align=middle width=12.83677559999999pt height=22.465723500000017pt/> based on the following:
 
@@ -18,7 +18,9 @@ The basic unit of work in a neural network is the `perceptron`. A `perceptron` h
 * One of the  commonly used `activation functions` is the `sigmoid` <img src="/tex/23c2e593354a49d6159a7b521a41f2ff.svg?invert_in_darkmode&sanitize=true" align=middle width=95.16736844999998pt height=27.77565449999998pt/>.
 * In conclusion <img src="/tex/6d136b281bb2acf64aa7b8f22fe0ba14.svg?invert_in_darkmode&sanitize=true" align=middle width=135.98351085pt height=31.141535699999984pt/>.
 
-### Neural Network
+## Neural Networks
+
+### Introduction
 
 A `neural network` is a graph of associated `perceptrons`. `Neural networks` are composed of `neural network layers`. A `neural network layer` is a tensor of `perceptrons`. The `perceptrons` in a `neural network layer` are connected to each other because they are components of a tensor. We can define layer n as <img src="/tex/21ec0f7c7be033a755c8d561b9ab2842.svg?invert_in_darkmode&sanitize=true" align=middle width=167.3933712pt height=31.141535699999984pt/>. Neural networks have three `layer types input, hidden, and output`. A neural network  may have multiple hidden layers but only one input and output layers. Consider a neural network consisting of the fallowing layers:
 
