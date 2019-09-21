@@ -24,14 +24,12 @@ A `neural network` is a graph of associated `perceptrons`. `Neural networks` are
 
 <div style="display: flex; flex-wrap: nowrap;" align="center">
 <div>
-
-1. <img src="/tex/9b10f91822afbf5be4cefeacc35b17ae.svg?invert_in_darkmode&sanitize=true" align=middle width=70.28910404999999pt height=31.141535699999984pt/>
-2. <img src="/tex/5ef91ad474a3f576e1b87884e30b3cb0.svg?invert_in_darkmode&sanitize=true" align=middle width=115.86194895pt height=31.141535699999984pt/>
-3. <img src="/tex/fb44c96eb90a025b1d144ea7f7fc42ae.svg?invert_in_darkmode&sanitize=true" align=middle width=73.96450709999998pt height=31.141535699999984pt/>
-
+<img with=110 height=110 src="img/simple_nn.svg"/>
 </div>
 <div>
-<img with=110 height=110 src="img/simple_nn.svg"/>
+
+<img src="/tex/9b10f91822afbf5be4cefeacc35b17ae.svg?invert_in_darkmode&sanitize=true" align=middle width=70.28910404999999pt height=31.141535699999984pt/>  <img src="/tex/5ef91ad474a3f576e1b87884e30b3cb0.svg?invert_in_darkmode&sanitize=true" align=middle width=115.86194895pt height=31.141535699999984pt/>  <img src="/tex/fb44c96eb90a025b1d144ea7f7fc42ae.svg?invert_in_darkmode&sanitize=true" align=middle width=73.96450709999998pt height=31.141535699999984pt/>
+
 </div>
 </div>
 
