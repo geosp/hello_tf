@@ -40,7 +40,7 @@ For completeness let's consider the output layer `perceptron` $P_{1o}$. Based on
 ### Introduction
 
 At this point think of a neural network as a system defined by the following tensor $\hat{N} = [\hat{L}_{i}, \hat{L}_{1h}, \hat{L}_{2h}, \hat{L}_{3h},...\hat{L}_{nh}, \hat{L}_{o} ]$.
-Systems have state, in our daily experience we go through time and we have a state at each moment in time. We experience reality as a series of moments in time. At each moment we can assess our state and map any number of metrics to an exact moment in time and persist the resulting information representing our state. Compare to you or me $\hat{N}$ is a very simple system a moment of time for it is represented by evaluating $\hat{L}_{1h}, \hat{L}_{2h}, \hat{L}_{3h},...\hat{L}_{nh}$ and $\hat{L}_{o}$ at a given value of $\hat{L}_{o}$. We bring $\hat{N}$ to life by feeding it `input` and evaluating the `output` of every `perceptron` $P$ in each neural network layer $\hat{L}$.
+Systems have `state`, in our daily experience we go through time and we have `a state at each moment in time`. Our reality is a series of moments in time. At each moment we can `assess our state` and map any number of metrics to an exact moment in time and persist the resulting information representing our `state`. Compare to you or me $\hat{N}$ is a very simple system, a moment of time for it is represented by evaluating $\hat{L}_{1h}, \hat{L}_{2h}, \hat{L}_{3h},...\hat{L}_{nh}$ and $\hat{L}_{o}$ at a given value of $\hat{L}_{o}$. We bring $\hat{N}$ to life by feeding it `input` and evaluating the `output` of every `perceptron` $P$ in each neural network layer $\hat{L}$.
 
 ### Back Propagation
 
