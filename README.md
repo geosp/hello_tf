@@ -14,7 +14,8 @@ The basic unit of work in a neural network is the `perceptron`. A `perceptron` h
 * Capping <img src="/tex/72a8c3544b60e70e9af83b6202f1d1f7.svg?invert_in_darkmode&sanitize=true" align=middle width=19.899247499999987pt height=22.465723500000017pt/> adds additional control over signal emission and is done by subtracting a bias <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/> from the sum.
 * It is possible for <img src="/tex/a15ed02692768e127f845e4d76374049.svg?invert_in_darkmode&sanitize=true" align=middle width=47.86712369999999pt height=22.831056599999986pt/> to have a value outside the desire signal strength <img src="/tex/a05f09f794b3ed2f38eb678dc04b450a.svg?invert_in_darkmode&sanitize=true" align=middle width=68.54424719999999pt height=21.18721440000001pt/>. For this reason an `activation function` is used to bring <img src="/tex/2ec6e630f199f589a2402fdf3e0289d5.svg?invert_in_darkmode&sanitize=true" align=middle width=8.270567249999992pt height=14.15524440000002pt/> into the desired range.
 * One of the  commonly used `activation functions` is the `sigmoid` <img src="/tex/23c2e593354a49d6159a7b521a41f2ff.svg?invert_in_darkmode&sanitize=true" align=middle width=95.16736844999998pt height=27.77565449999998pt/>.
-* In conclusion <img src="/tex/6d136b281bb2acf64aa7b8f22fe0ba14.svg?invert_in_darkmode&sanitize=true" align=middle width=135.98351085pt height=31.141535699999984pt/>.
+
+In conclusion the implementation of a perceptron is the function <img src="/tex/6d136b281bb2acf64aa7b8f22fe0ba14.svg?invert_in_darkmode&sanitize=true" align=middle width=135.98351085pt height=31.141535699999984pt/>.
 
 ## Neural Networks
 
