@@ -37,3 +37,15 @@ Neural network themselves are tensors. In this case neural network $\hat{N} = [\
 
 For completeness let's consider the output layer `perceptron` $P_{1o}$. Based on our current understanding $P_{1o}$ has an internal tensor of `activation values` $\hat{A}_{o1} = [a_{1o}, a_{2o}]$ because $\hat{L}_{1h}$ has two components $P_{1h}$ and $P_{2h}$. The output for $P_{1h}$ is a potential $p_{1h}$ and the output for $P_{2h}$ is a potential $p_{2h}$ therefore the weight value tensor is $\hat{W}_{1h} = [p_{1h}, p_{2h}]$. The weighted sum for $P_{1o}$ is $S_{w1o} = p_{1h}a_{1o} + p_{2h}a_{2o}$ and its potential is $p_{1o} = \sigma(S_{w1o} - b)$. At this point the manner in which every perceptron in a neural network layer has an effect on all other perceptrons in the network should be clear.
 
+## Neural Network Activation
+
+### Introduction
+
+At this point think of a neural network as a system defined by the following tensor $\hat{N} = [\hat{L}_{i}, \hat{L}_{1h}, \hat{L}_{2h}, \hat{L}_{3h},...\hat{L}_{nh}, \hat{L}_{o} ]$.
+Systems have state, in our daily experience we go through time and we have a state at each moment in time. We experience reality as a series of moments in time. At each moment we can assess our state and map any number of metrics to an exact moment in time and persist the resulting information representing our state. Compare to you or me $\hat{N}$ is a very simple system a moment of time for it is represented by evaluating $\hat{L}_{1h}, \hat{L}_{2h}, \hat{L}_{3h},...\hat{L}_{nh}$ and $\hat{L}_{o}$ at a given value of $\hat{L}_{o}$. We bring $\hat{N}$ to life by feeding it `input` and evaluating the `output` of every `perceptron` $P$ in each neural network layer $\hat{L}$.
+
+### Back Propagation
+
+### Error Function
+
+### Gradient Descent
