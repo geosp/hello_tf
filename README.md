@@ -18,8 +18,6 @@ The basic unit of work in a neural network is the `perceptron`. A `perceptron` h
 
 ## Neural Networks
 
-### Introduction
-
 A `neural network` is a graph of associated `perceptrons`. `Neural networks` are composed of `neural network layers`. A `neural network layer` is a tensor of `perceptrons`. The `perceptrons` in a `neural network layer` are connected to each other because they are components of a tensor. We can define layer n as <img src="/tex/21ec0f7c7be033a755c8d561b9ab2842.svg?invert_in_darkmode&sanitize=true" align=middle width=167.3933712pt height=31.141535699999984pt/>. Neural networks have three `layer types input, hidden, and output`. A neural network  may have multiple hidden layers but only one input and output layers. Consider a neural network consisting of the fallowing layers:
 
 <div align="center">
