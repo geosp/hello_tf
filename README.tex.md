@@ -40,10 +40,12 @@ For completeness let's consider the output layer `perceptron` $P_{1o}$. Based on
 
 ### Introduction
 
-At this point think of a neural network as a system defined by the following tensor $\hat{N} = [\hat{L}_{i}, \hat{L}_{1h}, \hat{L}_{2h}, \hat{L}_{3h},...\hat{L}_{nh}, \hat{L}_{o} ]$.
-Systems have `state`, in our daily experience we go through time and we have `a state at each moment in time`. Our reality is a series of moments in time. At each moment we can `assess our state` and map any number of metrics to an exact moment in time and persist the resulting information representing our `state`. Compare to you or me $\hat{N}$ is a very simple system, a moment of time for it is represented by evaluating $\hat{L}_{1h}, \hat{L}_{2h}, \hat{L}_{3h},...\hat{L}_{nh}$ and $\hat{L}_{o}$ at a given value of $\hat{L}_{i}$. We bring $\hat{N}$ to life by feeding it `input` and evaluating the `output` of every `perceptron` $P$ in each neural network layer $\hat{L}$.
+We define a `neural network algorithm` as a function $N$ that produces an `output` $\hat{L}_{o}$ in response to an `input` $\hat{L}_{i}$ and n number of hidden layers $\hat{L}_{1h..nh}$ i.e. $N(\hat{L}_{i}, \hat{L}_{1h..nh}) = \hat{L}_{o}$. A neural network is a system defined by the following tensor $\hat{N} = [\hat{L}_{i}, \hat{L}_{1h}, \hat{L}_{2h}, \hat{L}_{3h},...\hat{L}_{nh}, \hat{L}_{o} ]$.
+In our daily experience we go through time and we have a `state` at each moment in time. Our reality is a series of moments in time. At each moment we can `assess our state` and map any number of metrics to an exact moment in time and persist the resulting information representing our `state`. Our memories are our `state` and we derive knowledge from them. Compare to you or me $\hat{N}$ is a very simple system, a moment of time for $\hat{N}$ is represented by evaluating $\hat{L}_{1h}, \hat{L}_{2h}, \hat{L}_{3h},...\hat{L}_{nh}$ and $\hat{L}_{o}$ at a given value of $\hat{L}_{i}$. We bring $\hat{N}$ to life by feeding it `input` and evaluating the `output` of every `perceptron` $P$ in each neural network layer $\hat{L}$. A neural network is active when $\hat{N}$ is modified by given algorithm $NN$.
 
-### Back Propagation
+### Back Propagation Algorithm
+
+Back propagation is an algorithm or strategy to feed or activate $\hat{N}$. The first step to feed $\hat{N}$ is to prepare the information for `input`. The process of preparing the `input` is challenging and can vary depending on what you are trying to accomplish. The last step in the process for preparing input is data normalization, and is usually accomplished by [min-max feature scaling](https://en.wikipedia.org/wiki/Feature_scaling). The function for `min-max feature scaling` is $normalize(a_{ni}) = (\frac{a_{ni} - a_{imin}}{a_{imax} - a_{imin}})$ where $a_{ni}$ is any, $a_{imax}$ is the maximum, and $a_{imin}$ is the minimum of the components in $\hat{L}_{i}$
 
 ### Error Function
 
