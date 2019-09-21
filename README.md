@@ -24,7 +24,7 @@ A `neural network` is a graph of associated `perceptrons`. `Neural networks` are
 
 <div align="center">
 <div>
-<img with=125 height=125 src="img/simple_nn.svg"/>
+<img with=130 height=130 src="img/simple_nn.svg"/>
 </div>
 <div>
 
