@@ -37,7 +37,7 @@ Neural network themselves are tensors. In this case neural network $\hat{N} = [\
 For completeness let's consider the output layer `perceptron` $P_{1o}$. Based on our current understanding $P_{1o}$ has an internal tensor of `activation values` $\hat{A}_{o1} = [a_{1o}, a_{2o}]$ because $\hat{L}_{1h}$ has two components $P_{1h}$ and $P_{2h}$. The output for $P_{1h}$ is a potential $p_{1h}$ and the output for $P_{2h}$ is a potential $p_{2h}$ therefore the weight value tensor is $\hat{W}_{1h} = [p_{1h}, p_{2h}]$. The weighted sum for $P_{1o}$ is $S_{w1o} = p_{1h}a_{1o} + p_{2h}a_{2o}$ and its potential is $p_{1o} = \sigma(S_{w1o} - b)$. Notice how all perceptrons in every layer of the neural network are relaying information i.e. emitting a signal directly or indirectly to each other in a forward direction. The type of neural network where all perceptrons are connected to each other is called a dense neural network.
 
 
-## Neural Network Activation
+## Neural Networks In Action
 
 ### Introduction
 
