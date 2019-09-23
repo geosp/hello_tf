@@ -75,8 +75,7 @@ Imagine we have a set of data representing the horse power $hp$, and the miles p
 
 ## Conclusion
 
-Neural networks are universal function models. When a neural network is trained it becomes specific to the training domain. After training the acquired knowledge can be preserved  
-by serializing $\hat W$, associated biases, and all the hyper parameters used during training. The resulting kernel of knowledge is very tiny in comparison to the training data and could be used almost anywhere including a web browser. Is as simple as using your AI framework of choice to instantiate $N$ by deserializing $\hat N$ and giving it an input, then you get your lovely output like magic.
+Neural networks are universal function models. When a neural network is trained it becomes specific to the training domain. After training the acquired knowledge can be preserved by serializing $\hat W$, associated biases, and all the hyper parameters used during training. The resulting kernel of knowledge is very tiny in comparison to the training data and could be used almost anywhere including a web browser. Is as simple as using your AI framework of choice to instantiate $N$ by deserializing $\hat N$ and giving it an input, then you get your lovely output like magic.
 
 
 
