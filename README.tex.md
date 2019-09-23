@@ -48,7 +48,7 @@ In our daily experience we go through time and we have a `state` at each moment 
  
 Back propagation is a machine learning algorithm. The algorithm's objective is to find the optimal values for $\hat W$ that will yield expected outputs $\hat P_{o}$ in $\hat N$ through a training process. The algorithm's steps are:
 
-1. Identify the unique set of elements in a training set representing the expected output call it $\hat P_{o}$ i.e. the expected output.
+1. Identify the unique set of elements in a training set representing the expected output call it $\hat P_{o}$.
 2. Generate an initial set of random numbers corresponding to the number of perceptrons in $L_{i}$ in the range $0 \geq w \leq 1$ and use them to construct $\hat W_{n}$ the tensor used to invoke $P$ for every perceptron in $\hat L_{i}$.
 3. Set $\hat A_{nh}$ for all perceptrons in $\hat L_{nh}$ and ${\hat A_{no}}$ in all perceptrons in $\hat L_{o}$ to random numbers in the range $0 \geq a \leq 1$. 
 4. Iterate over the input data set.
