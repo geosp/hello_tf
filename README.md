@@ -52,9 +52,9 @@ In our daily experience we go through time and we have a `state` at each moment 
 ###  Back Propagation training using Gradient Descent Algorithm
   
   
-Back propagation is a machine learning algorithm. The objective of gradient descent is to find the optimal values for <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20W"/> that will yield <img src="https://latex.codecogs.com/svg.latex?P&#x27;_o"/> in <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20N"/> this called training. The algorithm's steps are:
+Back propagation is a machine learning algorithm. The algorithm's objective is to find the optimal values for <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20W"/> that will yield expected outputs <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20P_{o}"/> in <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20N"/> through a training process. The algorithm's steps are:
   
-1. Identify the unique set of elements in a training set <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20A_{o}"/> call it <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20P_{o}"/> i.e. desire output.
+1. Identify the unique set of elements in a training set <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20A_{o}"/> call it <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20P_{o}"/> i.e. the expected output.
 2. Generate an initial set of random numbers corresponding to the number of perceptrons in <img src="https://latex.codecogs.com/svg.latex?L_{i}"/> in the range <img src="https://latex.codecogs.com/svg.latex?0%20&#x5C;geq%20w%20&#x5C;leq%201"/> and use them to construct <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20W_{n}"/> the tensor used to invoke <img src="https://latex.codecogs.com/svg.latex?P"/> for every perceptron in <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20L_{i}"/>.
 3. Set <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20A_{nh}"/> for all perceptrons in <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20L_{nh}"/> and <img src="https://latex.codecogs.com/svg.latex?{&#x5C;hat%20A_{no}}"/> in all perceptrons in <img src="https://latex.codecogs.com/svg.latex?&#x5C;hat%20L_{o}"/> to random numbers in the range <img src="https://latex.codecogs.com/svg.latex?0%20&#x5C;geq%20a%20&#x5C;leq%201"/>. 
 4. Iterate over the input data set.
