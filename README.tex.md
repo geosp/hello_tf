@@ -60,7 +60,7 @@ Back propagation is a machine learning algorithm. The algorithm's objective is t
 10. Calculate $\Delta w$ in the backward direction to adjust every $w$ in $\hat W$ across all layers in $\hat N$ relative to it's adjacent layer. This step is know as `back propagation`.
 11. After iterating over the complete training data set verify that the current error is less or equal to the `error threshold` $E_{t}'$ or that the `maximum number of iterations` $I_{max}$ was reached, if true stop training else continue. Each complete iteration over all items in a training set is called an `epoch`.
 
-Is crucial to understand that $\hat W$ changes as a result of back propagation while $\hat A$ changes as a result of iterating over training data in the forward direction. This means that properly labeled data is essential  for training and how well $\hat N$ performs. When practicing machine learning you will be presented with the opportunity to adjust what are called hyper parameters some of them are:
+Is crucial to understand that $\hat W$ and associated bias change as a result of back propagation while $\hat A$ changes as a result of iterating over training data in the forward direction. This means that properly labeled data is essential  for training and how well $\hat N$ performs. When practicing machine learning you will be presented with the opportunity to adjust what are called hyper parameters some of them are:
 
 * $E_{t}$ error threshold.
 * $I_{max}$ expected number of iterations.
